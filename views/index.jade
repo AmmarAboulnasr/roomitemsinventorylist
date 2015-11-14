@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+  head
+    title Message Board
+    link(href="bower_components/bootstrap/dist/css/bootstrap.min.css", rel='stylesheet')
+    link(href="bower_components/font-awesome/css/font-awesome.min.css", rel='stylesheet')
+    link(href="bower_components/sweetalert/dist/sweetalert.css", rel='stylesheet')
+    link(href="style.css", rel='stylesheet')
+  body
+    h1 Rooms & Items Management System
+    div.col-xs-6#roomsContainer
+      div.col-xs-12#roomsListTitle ROOMS LIST
+      label(for='roomName') Room Name:
+      input.form-control#roomName(type='text')
+      p
+      button.btn.btn-default.col-xs-12#addRoom Add
+      table.table.roomsTable#roomsTable
+        thead
+          tr
+            th.col-xs-3 Room
+            th.col-xs-8 Items in the Room
+            th.col-xs-1
+    
+    div.col-xs-6#itemsContainer
+      div.col-xs-12#itemsListTitle ITEMS LIST
+      label(for='itemName') Item:
+      input.form-control#itemName(type='text')
+      label(for='itemValue') Item Value:
+      input.form-control#itemValue(type='text')
+      label(for='itemDescription') Item Item Description:
+      input.form-control#itemDescription(type='text')
+      p
+      button.btn.btn-default.col-xs-12#addItem Add
+      table.table.itemsTable#itemsTable
+        thead
+          tr
+            th.col-xs-4 Item
+            th.col-xs-2 Value
+            th.col-xs-5 Description
+            th.col-xs-1
+
+    hr.col-xs-10
+    div.col-xs-6#roomsCounter
+      div.col-xs-12#roomsCountHeader ROOMS
+      div.col-xs-12#roomsCount
+    div.col-xs-6#itemsCounter
+      div.col-xs-12#itemsCountHeader ITEMS
+      div.col-xs-12#itemsCount
+
+    hr.col-xs-10
+    div.col-xs-6#addItemToARoom
+      div.col-xs-12#addItemToARoomTitle ADD ITEMS TO A ROOM
+      table.table.col-xs-12#itemsListAITAR
+        thead
+          tr
+            th Pick an Item&nbsp
+              i.fa.fa-sign-out
+          tr
+            th.col-xs-5 Name
+            th.col-xs-2 Value
+            th.col-xs-5 Description
+      table.table.col-xs-12#roomsListAITAR
+        thead
+          tr
+            th Choose a Room&nbsp 
+              i.fa.fa-hand-paper-o
+      button.btn.btn-default.col-xs-12#addAITAR Add
+
+
+
+
+
+
+
+    script(src='bower_components/jquery/dist/jquery.min.js')
+    script(src='bower_components/sweetalert/dist/sweetalert.min.js')
+    script(src="bower_components/moment/min/moment.min.js")
+    script(src='main.js')

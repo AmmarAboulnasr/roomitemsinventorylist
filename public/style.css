@@ -1,0 +1,71 @@
+body {
+  text-align: center;
+}
+
+.roomsTable, .itemsTable, #roomsListAITAR {
+  display: none;
+  text-align: left;
+}
+
+#itemsListAITAR {
+  text-align: left;
+}
+
+.noRoom, .noItem {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  display: none;
+}
+
+/*i:hover {
+  color: red;
+  cursor: pointer;
+}
+*/
+hr {
+  margin-left: 7%;
+  border-color: #b3b3b3;
+  border-width: 1px;
+
+}
+
+.btn {
+  background-color: #cceaff;
+}
+
+#roomsCountHeader, #itemsCountHeader {
+  font-size: 50px;
+  color: #cceaff;
+}
+
+#roomsCount, #itemsCount {
+  font-size: 80px;
+  color: #3398ff;
+}
+
+#itemsListTitle, #roomsListTitle, #addItemToARoomTitle {
+  font-size: 30px;
+  color: #cceaff;
+}
+
+#addItemToARoomTitle {
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background-color: #ffffb3;
+}
+
+#addItemToARoom {
+  margin-left: 25%;
+}
+
+#addAITAR {
+  display: none;
+}
+
+i:hover, #itemsListAITAR > tbody > tr:hover, #roomsListAITAR > tbody > tr:hover {
+  color: red;
+  cursor: pointer;
+}
