@@ -1,12 +1,12 @@
 'use strict';
 
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 var express = require('express');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/inventorylistapp');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/inventorylistapp');
 
 var app = express();
 
