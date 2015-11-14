@@ -1,0 +1,25 @@
+{
+  "name": "inventorylist",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Ammar <ammar@ammaronline.net>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/AmmarAboulnasr/roomitemsinventorylist",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "sweetalert": "~1.1.3",
+    "moment": "~2.10.6",
+    "font-awesome": "~4.4.0"
+  }
+}
